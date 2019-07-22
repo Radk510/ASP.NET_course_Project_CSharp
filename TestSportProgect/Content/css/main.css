@@ -1,0 +1,189 @@
+﻿body {
+    cursor: default;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header */
+.header {
+    background-color: #F2B90C;
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    width: 100%;
+}
+
+.menu li {
+    margin: 0 40px;
+}
+
+    .menu li a {
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+    }
+
+
+
+/* First screen - Main section */
+.first-section {
+    height: 100vh;
+    background-image: url(../img/background-7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+    border-bottom: 5px solid white;
+    
+}
+
+.jumbotron {
+    background: rgba(204, 204, 204, 0.7);
+}
+
+
+.description h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.description p {
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+.description-btn {
+    background-color: #238C2A;
+    border: none;
+    box-shadow: none;
+}
+
+    .description-btn:hover {
+        background-color: #027333;
+    }
+
+    .description-btn:active {
+        background-color: #027333 !important;
+    }
+
+
+
+/* Transfer-section */
+.transfer-section {
+    min-height: 100vh;
+    padding-top: 30px;
+    background-image: url(../img/background-10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+    border-bottom: 1px solid black;
+}
+
+.transfer-heading h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    
+}
+
+.league-transfers {
+    background-color: green;
+}
+
+.page-header {
+    margin: 20px 0 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.openListBtn {
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    background-color: #238C2A;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: none;
+}
+
+    .openListBtn:hover {
+        background-color: #F2B90C;
+        color: black;
+    }
+
+    .openListBtn:focus {
+        box-shadow: none;
+        border: none;
+    }
+
+    .openListBtn:active {
+        box-shadow: none !important;
+        border: none;
+        background-color: #238C2A !important;
+    }
+
+.infoContainer {
+    margin-bottom: 20px;
+}
+
+.navButton {
+    margin: 0 30px;
+}
+
+
+
+
+
+
+/* Clubs Section */
+.clubsSection {
+    min-height: 100vh;
+    padding-top: 30px;
+    background-image: url(../img/background8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+    border-bottom: 1px solid black;
+}
+
+.infoContainer p {
+    text-align: center;
+}
+
+
+.infoContainer p span {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    transition: all ease 0.3s;
+}
+
+.infoContainer p span:hover {
+    background-color: green;
+    bottom: 5px;
+    transition: all ease 0.3s;
+}
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+    background-color: #F2B90C;
+    color: black;
+}
+
+    .footer p {
+        margin-bottom: 10px;
+    }

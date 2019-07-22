@@ -3,40 +3,54 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>@ViewBag.Title - Sports news & events</title>
+    <link href='@Url.Content("~/Content/css/bootstrap.min.css")' rel="stylesheet" />
+    <link href='@Url.Content("~/Content/css/main.css")' rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9993bb88f2.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <header class="header">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-3">
+                    <a href='@Url.Content("~/Home/index")'><img src='@Url.Content("~/Content/img/page-logo.png")' alt="Page logo" class="logo"></a>
+                </div>
+                <div class="col-lg-8 ml-auto">
+                    <nav>
+                        <ul class="menu d-flex justify-content-center">
+                            <li>
+                                @Html.ActionLink("Main", "Index")
+                            </li>
+                            <li>
+                                <a href='@Url.Content("~/Home/index#transfer-section")'>News & Events</a>
+                            </li>
+                            <li>                               
+                                @Html.ActionLink("Clubs & Leagues", "FootballClubs")
+                            </li>
+                            <li>
+                                <a href="#footer">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </header>
+        @RenderBody()        
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 d-flex align-items-end">
+                        <p>Created by Rodion Kl. &copy2019</p>
+                    </div>
+                    <div class="col-lg-3 ml-auto">
+                        <p>mob.: +375 29 1994789</p>
+                        <p>skype: Rodionk510</p>
+                        <p>e-mail: rodionk510@yandex.ru</p>
+                    </div>
+                </div>
+            </div>
         </footer>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <script src='@Url.Content("~/Scripts/js/main.js")'></script> 
 </body>
 </html>

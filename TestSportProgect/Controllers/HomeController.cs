@@ -13,8 +13,12 @@ namespace TestSportProgect.Controllers
         ClubContext database = new ClubContext();
         public ActionResult Index()
         {
-            var clubs = database.Clubs;
-            ViewBag.Clubs = clubs;
+            
+            return View();
+        }
+
+        public ActionResult FootballClubs()
+        {
             return View();
         }
 

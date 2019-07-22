@@ -1,31 +1,48 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Sports news & events";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<section class="first-section d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 jumbotron description">
+                <h2>Sport news & events app</h2>
+                <p>Do you want to view summertime world sport activities? All you need is to choose an interesting for you <strong>topic</strong>, click the button and watch the list of news or some sports events. Have fun!</p>
+                <a class="btn btn-primary description-btn" href="#transfer-section" role="button">Go to Events</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</section>
+<section class="transfer-section d-flex align-items-center" id="transfer-section">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10">
+                <div class="transfer-heading page-header d-flex justify-content-center ">
+                    <h1>Sports news and events</h1>
+                </div>
+                <!-- button One -->
+                <div class="rounded d-flex justify-content-center">
+                    <button class="btn btn-primary openListBtn" id='btnOne'>World friendlies football matches</button>
+                </div>
+                <div class="infoContainer d-none" id="latestFriendliesContainer">
+                    <div class="apiContent" id="friendliesInfo"></div>
+                    <div class="navButtons d-flex justify-content-center">
+                        <button class="btn btn-primary navButton prevBtn" id="previousBtn"><i class="fas fa-arrow-left"></i></button>
+                        <button class="btn btn-primary navButton nxtBtn" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <!-- button Two -->
+                <div class=" rounded d-flex justify-content-center">
+                    <button class="btn btn-primary openListBtn" id='btnTwo'>Sports news</button>
+                </div>
+                <div class="infoContainer d-none" id="footballNews">
+                    <div class="apiContent" id="friendliesInfo"></div>
+                    <div class="navButtons d-flex justify-content-center">
+                        <button class="btn btn-primary navButton prevBtn" id="previousBtn"><i class="fas fa-arrow-left"></i></button>
+                        <button class="btn btn-primary navButton nxtBtn" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>    
+</section>
