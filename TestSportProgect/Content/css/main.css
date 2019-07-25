@@ -10,7 +10,6 @@ ul, li {
 }
 
 
-
 /* Header */
 .header {
     background-color: #F2B90C;
@@ -26,12 +25,12 @@ ul, li {
     margin: 0 40px;
 }
 
-    .menu li a {
-        font-size: 18px;
-        font-weight: 400;
-        color: #000000;
-        text-decoration: none;
-    }
+.menu li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+}
 
 
 
@@ -67,13 +66,13 @@ ul, li {
     box-shadow: none;
 }
 
-    .description-btn:hover {
-        background-color: #027333;
-    }
+.description-btn:hover {
+    background-color: #027333;
+}
 
-    .description-btn:active {
-        background-color: #027333 !important;
-    }
+.description-btn:active {
+    background-color: #027333 !important;
+}
 
 
 
@@ -113,34 +112,30 @@ ul, li {
     box-shadow: none;
 }
 
-    .openListBtn:hover {
-        background-color: #F2B90C;
-        color: black;
-    }
+.openListBtn:hover {
+    background-color: #F2B90C;
+    color: black;
+}
 
-    .openListBtn:focus {
-        box-shadow: none;
-        border: none;
-    }
+.openListBtn:focus {
+    box-shadow: none;
+    border: none;
+}
 
-    .openListBtn:active {
-        box-shadow: none !important;
-        border: none;
-        background-color: #238C2A !important;
-    }
+.openListBtn:active {
+    box-shadow: none !important;
+    border: none;
+    background-color: #238C2A !important;
+}
 
 .infoContainer {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .navButton {
     margin: 0 30px;
 }
-
-
-
-
-
 
 /* Clubs Section */
 .clubsSection {
@@ -157,8 +152,12 @@ ul, li {
     text-align: center;
 }
 
+.infoContainer a {
+    text-decoration: none;
+    color: black;
+}
 
-.infoContainer p span {
+.infoContainer a span {
     padding: 5px;
     border-radius: 3px;
     background-color: white;
@@ -167,23 +166,27 @@ ul, li {
     transition: all ease 0.3s;
 }
 
-.infoContainer p span:hover {
-    background-color: green;
+.infoContainer a span:hover {
+    background-color: #027333;
+    color: white;
     bottom: 5px;
     transition: all ease 0.3s;
+
+}
+
+#waiting {
+    display: none;
+    font-size: 30px;
+    text-align: center;
 }
 
 
-
-
 /* FOOTER */
-
-
 .footer {
     background-color: #F2B90C;
     color: black;
 }
 
-    .footer p {
-        margin-bottom: 10px;
-    }
+.footer p {
+    margin-bottom: 10px;
+}

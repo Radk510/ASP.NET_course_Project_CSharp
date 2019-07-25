@@ -8,6 +8,10 @@ namespace TestSportProgect.Models
 {
     public class ClubContext : DbContext
     {
+        public ClubContext() : base("DbConnection")
+        {
+        }
+
         public DbSet<Club> Clubs { get; set; }
         public DbSet<League> Leagues { get; set; }
 
