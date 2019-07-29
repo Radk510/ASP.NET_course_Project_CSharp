@@ -185,9 +185,12 @@ ul, li {
     display: none;
     font-size: 30px;
     text-align: center;
+    
 }
 
-
+#waiting p, #waitingOne p, #waitingTwo p {
+    color: white;
+}
 
 
 
@@ -196,6 +199,8 @@ ul, li {
     background-color: #F2B90C;
     color: black;
 }
+
+
 
 .footer p {
     margin-bottom: 10px;
