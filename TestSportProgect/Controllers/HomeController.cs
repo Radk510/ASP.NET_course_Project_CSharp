@@ -19,7 +19,7 @@ namespace TestSportProgect.Controllers
         public ActionResult FootballClubs()
         {
             return View();
-        }        
+        }
         public ActionResult EnglandClubsList()
         {
             var clubs = database.Clubs.Where(i => i.League.Name == "FA Premier League").ToList();
@@ -37,5 +37,20 @@ namespace TestSportProgect.Controllers
             var clubs = database.Clubs.Where(i => i.League.Name == "Seria A").ToList();
             return PartialView(clubs);
         }
+
+        public ActionResult ClubsInfo()
+        {
+
+            
+            return View();
+        }
+
+
+        public string GetString(int some)
+        {
+            return some.ToString();
+        }
+
+
     }
 }
