@@ -19,13 +19,13 @@
                     <nav>
                         <ul class="menu d-flex justify-content-center">
                             <li>
-                                @Html.ActionLink("Main", "Index")
+                                @Html.ActionLink("Main", "Index", "Home")
                             </li>
                             <li>
                                 <a href='@Url.Content("~/Home/index#transfer-section")'>News & Events</a>
                             </li>
                             <li>                               
-                                @Html.ActionLink("Clubs & Leagues", "FootballClubs")
+                                @Html.ActionLink("Clubs & Leagues", "FootballClubs", "Home")
                             </li>
                             <li>
                                 <a href="#footer">Contacts</a>
@@ -51,7 +51,8 @@
                 </div>
             </div>
         </footer>
-    <script src='@Url.Content("~/Scripts/js/main.js")'></script> 
+    <script src='@Url.Content("~/Scripts/js/main.js")'></script>
+    <script src='@Url.Content("~/Scripts/js/clubsSection.js")'></script>
     @Scripts.Render("~/bundles/jquery")
     <script src='@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")'></script>
 </body>

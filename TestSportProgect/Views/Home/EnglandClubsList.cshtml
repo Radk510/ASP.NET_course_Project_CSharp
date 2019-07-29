@@ -1,6 +1,10 @@
 ﻿@model IEnumerable<TestSportProgect.Models.Club>
 
 @foreach (var item in Model)
-{
-    <a href="#"><span>@item.Name</span></a>
+{  
+    <p class="insertInfo">
+        <span>
+           @Html.ActionLink(@item.Name, @item.infoPath, "Clubs")
+        </span>
+    </p>
 }

@@ -14,34 +14,40 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-10">
                     <!-- button One -->
-                    @using (Ajax.BeginForm("EnglandClubsList", new AjaxOptions { UpdateTargetId = "clubsInfo", LoadingElementId = "waiting" }))
+                    @using (Ajax.BeginForm("EnglandClubsList", new AjaxOptions { UpdateTargetId = "clubsInfo", LoadingElementId = "waiting",
+                        //loadingelementduration = 500
+                    }))
                     {
                         <div class="rounded d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary openListBtn" id='btnOne'>FA Premier League</button>
+                            <button  class="btn btn-primary openListBtnClubs" id='btnOne'>FA Premier League</button>
                         </div>
                     }
-                    <div class="apiContent infoContainer d-none" id="clubsInfo"></div>
-                    <div id="waiting">Ожидание Ajax-запроса...</div>
+                    <div class="infoContainerClubs openSection" id="clubsInfo"></div>
+                    <div id="waiting">Waiting for Ajax request...</div>
 
 
                     <!-- button Two -->
-                    @using (Ajax.BeginForm("SpainClubsList", new AjaxOptions { UpdateTargetId = "clubsInfoTwo", LoadingElementId = "waiting" }))
+                    @using (Ajax.BeginForm("SpainClubsList", new AjaxOptions { UpdateTargetId = "clubsInfoTwo", LoadingElementId = "waitingOne",
+                        /*LoadingElementDuration = 1000*/
+                    }))
                     {
                         <div class="rounded d-flex justify-content-center">
-                            <button class="btn btn-primary openListBtn" id='btnOne'>LA Liga</button>
+                            <button class="btn btn-primary openListBtnClubs" id='btnOne'>LA Liga</button>
                         </div>
                     }
-                    <div class="apiContent infoContainer d-none " id="clubsInfoTwo"></div>
-                    <div id="waiting">Ожидание Ajax-запроса...</div>
+                    <div class="apiContent infoContainerClubs openSection" id="clubsInfoTwo"></div>
+                    <div id="waitingOne">Waiting for Ajax request...</div>
                     <!-- button Three -->
-                    @using (Ajax.BeginForm("ItalyClubsList", new AjaxOptions { UpdateTargetId = "clubsInfoThree", LoadingElementId = "waiting" }))
+                    @using (Ajax.BeginForm("ItalyClubsList", new AjaxOptions { UpdateTargetId = "clubsInfoThree", LoadingElementId = "waitingTwo",
+                        /*LoadingElementDuration = 1000*/
+                    }))
                     {
                         <div class="rounded d-flex justify-content-center">
-                            <button class="btn btn-primary openListBtn" id='btnOne'>Seria A</button>
+                            <button class="btn btn-primary openListBtnClubs" id='btnOne'>Seria A</button>
                         </div>
                     }
-                    <div class="apiContent infoContainer d-none " id="clubsInfoThree"></div>
-                    <div id="waiting">Ожидание Ajax-запроса...</div>
+                    <div class="apiContent infoContainerClubs openSection" id="clubsInfoThree"></div>
+                    <div id="waitingTwo">Waiting for Ajax request...</div>
                 </div>
             </div>
         </div>
