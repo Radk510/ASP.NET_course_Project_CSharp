@@ -126,6 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClubsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -143,7 +144,9 @@
     <Content Include="Content\img\background-7.jpg" />
     <Content Include="Content\img\background-9.jpg" />
     <Content Include="Content\img\background8.jpg" />
+    <Content Include="Content\img\chelseaLogo.png" />
     <Content Include="Content\img\page-logo.png" />
+    <Content Include="Content\img\chelseaStadium.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -161,6 +164,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\clubsSection.js" />
     <Content Include="Scripts\js\main.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
@@ -180,6 +184,22 @@
     <Content Include="Views\Home\EnglandClubsList.cshtml" />
     <Content Include="Views\Home\SpainClubsList.cshtml" />
     <Content Include="Views\Home\ItalyClubsList.cshtml" />
+    <Content Include="Views\Home\ClubsInfo.cshtml" />
+    <Content Include="Views\Clubs\ChelseaClub.cshtml" />
+    <Content Include="Views\Clubs\LiverpolClub.cshtml" />
+    <Content Include="Views\Clubs\ManUtdClub.cshtml" />
+    <Content Include="Views\Clubs\ManCtyClub.cshtml" />
+    <Content Include="Views\Clubs\ArsenalClub.cshtml" />
+    <Content Include="Views\Clubs\TottenhamClub.cshtml" />
+    <Content Include="Views\Clubs\BarsaClub.cshtml" />
+    <Content Include="Views\Clubs\RealClub.cshtml" />
+    <Content Include="Views\Clubs\AtlMdrClub.cshtml" />
+    <Content Include="Views\Clubs\SevillaClub.cshtml" />
+    <Content Include="Views\Clubs\JuveClub.cshtml" />
+    <Content Include="Views\Clubs\MilanClub.cshtml" />
+    <Content Include="Views\Clubs\InterClub.cshtml" />
+    <Content Include="Views\Clubs\NapoliClub.cshtml" />
+    <Content Include="Views\Clubs\RomaClub.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
