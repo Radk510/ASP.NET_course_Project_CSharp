@@ -145,6 +145,12 @@
     <Content Include="Content\img\background-9.jpg" />
     <Content Include="Content\img\background8.jpg" />
     <Content Include="Content\img\chelseaLogo.png" />
+    <Content Include="Content\img\ClubsLogos\Chelsea-logo.png" />
+    <Content Include="Content\img\ClubsLogos\Liverpool-logo.png" />
+    <Content Include="Content\img\ClubsStadiums\chelseaStadium.jpg" />
+    <Content Include="Content\img\ClubsStadiums\liverpoolStadium.jpg" />
+    <Content Include="Content\img\liverpoolLogo.png" />
+    <Content Include="Content\img\liverpoolStadium.jpg" />
     <Content Include="Content\img\page-logo.png" />
     <Content Include="Content\img\chelseaStadium.jpg" />
     <Content Include="favicon.ico" />
