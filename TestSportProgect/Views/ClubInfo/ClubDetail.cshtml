@@ -1,0 +1,12 @@
+﻿@model TestSportProgect.Models.Club
+
+@{
+    ViewBag.Title = "ClubInfo";
+}
+
+<h2>@Model.Name</h2>
+
+<div class="col-md-6">
+    <img src="~/Content/img/ClubsLogos/@Model.GetClubLogoPath"
+         alt="@Model.Name" class="img-responsive" />
+</div>

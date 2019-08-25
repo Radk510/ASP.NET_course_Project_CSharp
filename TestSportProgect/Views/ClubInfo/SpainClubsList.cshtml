@@ -1,0 +1,10 @@
+﻿@model IEnumerable<TestSportProgect.Models.Club>
+
+@foreach (var club in Model)
+{
+    <p class="insertInfo">
+        <span>            
+            @Html.ActionLink(club.Name, "ClubDetail", new { id = club.Id })
+        </span>
+    </p>
+}

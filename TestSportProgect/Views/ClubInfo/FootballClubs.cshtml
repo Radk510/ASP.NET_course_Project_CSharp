@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Clubs & Leagues";
+}
+
+<section class="clubsSection ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 jumbotron description">
+                <h2>European Football clubs</h2>
+                <p>There you can find some information about some European Footbal clubs. Choose the one and have fun.</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10">
+                <!-- button One -->
+                @using (Ajax.BeginForm("EnglandClubsList", new AjaxOptions
+                {
+                    UpdateTargetId = "clubsInfo",
+                    LoadingElementId = "waiting",
+                    //loadingelementduration = 500
+                }))
+                {
+                    <div class="rounded d-flex justify-content-center">
+                        <button class="btn btn-primary openListBtnClubs" id='btnOne'>FA Premier League</button>
+                    </div>
+                }
+                <div class="infoContainerClubs openSection" id="clubsInfo"></div>
+                <div id="waiting"><p>Waiting for Ajax request...</p></div>
+
+
+                <!-- button Two -->
+                @using (Ajax.BeginForm("SpainClubsList", new AjaxOptions
+                {
+                    UpdateTargetId = "clubsInfoTwo",
+                    LoadingElementId = "waitingOne",
+                    /*LoadingElementDuration = 1000*/
+                }))
+                {
+                    <div class="rounded d-flex justify-content-center">
+                        <button class="btn btn-primary openListBtnClubs" id='btnOne'>LA Liga</button>
+                    </div>
+                }
+                <div class="apiContent infoContainerClubs openSection" id="clubsInfoTwo"></div>
+                <div id="waitingOne"><p>Waiting for Ajax request...</p></div>
+                <!-- button Three -->
+                @using (Ajax.BeginForm("ItalyClubsList", new AjaxOptions
+                {
+                    UpdateTargetId = "clubsInfoThree",
+                    LoadingElementId = "waitingTwo",
+                    /*LoadingElementDuration = 1000*/
+                }))
+                {
+                    <div class="rounded d-flex justify-content-center">
+                        <button class="btn btn-primary openListBtnClubs" id='btnOne'>Seria A</button>
+                    </div>
+                }
+                <div class="apiContent infoContainerClubs openSection" id="clubsInfoThree"></div>
+                <div id="waitingTwo"><p>Waiting for Ajax request...</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
