@@ -11,9 +11,9 @@ namespace TestSportProgect.Models
         public string Name { get; set; }
         public string Stadium { get; set; }
 
-        public string infoPath { get; set; }
         public int? LeagueId { get; set; }
         public League League { get; set; }
+     
 
         public string GetStadiumPhotoPath
         {
