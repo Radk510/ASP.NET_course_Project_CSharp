@@ -3,6 +3,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.wrapper {
+    height: 100vh;
+}
+
 ul, li {
     display: block;
     margin: 0;
