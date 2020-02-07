@@ -21,10 +21,10 @@ namespace TestSportProgect.Controllers
         }
 
 
-        public string GetString(int some)
-        {
-            return some.ToString();
-        }
+        //public string GetString(int some)
+        //{
+        //    return some.ToString();
+        //}
 
 
     }
